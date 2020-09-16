@@ -1,0 +1,25 @@
+body {
+    margin: 0px;
+}
+
+.div1 {
+    background-color: blueviolet;
+    width: 200px;
+    height: 200px;
+    border: solid 10px;
+    padding: 20px;
+}
+
+.div2 {
+    background-color: coral;
+    width: 200px;
+    height: 200px;
+    border: solid 20px;
+}
+
+.div3 {
+    background-color: darkblue;
+    width: 200px;
+    height: 200px;
+    border: solid 10px;
+}
