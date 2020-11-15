@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="js/main.js"></script>
+
+    <title>Rock, Paper, Scissors</title>
+
+</head>
+
+<body>
+    <header class="rndBrd14 brdLgt boxTop">
+        <div class="subBox pdTB15 ">
+            <section class="pdLog">
+                <img src="images/logo-bonus.svg">
+            </section>
+            <section class="pdScr">
+                <div class="bkgLgt rndBrd8 pdTB15 cent boxScr float-right">
+                    <h6 class="fntColScr fntBld7">S C O R E</h6>
+                    <h6 id="txtScr" class="fntColDrk fntBld7 fntNum">0</h6>
+                </div>
+            </section>
+        </div>
+
+    </header>
+
+
+    <main id="mnSz" class="mainCont">
+
+        <div id="opcs" class=" container">
+            <div class="row ">
+                <div class="col-sm psRel ">
+                    <section>
+                        <img class="psPent " src="images/bg-pentagon.svg ">
+                        <button onclick="youPckd(1)" class="psBtnScs ">
+                        </button>
+                        <button onclick="youPckd(2)" class="psBtnPpr ">
+                        </button>
+                        <button onclick="youPckd(3)" class="psBtnRck ">
+                        </button>
+                        <button onclick="youPckd(4)" class="psBtnLzd ">
+                        </button>
+                        <button onclick="youPckd(5)" class="psBtnSpk ">
+                        </button>
+
+                        <img class="psImgScs " src="images/icon-scissors.svg ">
+                        <img class="psImgPpr " src="images/icon-paper.svg ">
+                        <img class="psImgRck " src="images/icon-rock.svg ">
+                        <img class="psImgLzd " src="images/icon-lizard.svg ">
+                        <img class="psImgSpk " src="images/icon-spock.svg ">
+                    </section>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div id="boxPck" class="container pdT cent vis">
+            <div class="row ">
+                <div class="col-md ">
+                    <h4 class="fntColWht ">Y O U &ensp; P I C K E D</h4>
+                    <div class="pdT ">
+                        <section id="imgPck" class="divUpck ">
+                            <img id="imgImg" class="divImgUpck " src="images/icon-scissors.svg ">
+                        </section>
+                    </div>
+                </div>
+                <div id="boxRes" class="col-md pdT2 vis">
+                    <h1 id="txtRes" class="fntColWht fntRes ">YOU LOSE</h1>
+                    <button onclick="plyAgn()" class="bkgLgt rndBrd8 cent btnRes ">
+                        <h5 class="fntColHdr fntBld7 ">P L A Y &ensp; A G A I N</h5>
+                    </button>
+                </div>
+                <div class="col-md ">
+                    <h4 class="fntColWht ">T H E &ensp; H O U S E &ensp; P I C K E D</h4>
+                    <div class="pdT ">
+                        <section id="hseWait" class="divWait">
+                        </section>
+                        <section id="hsePck" class="divUpck vis">
+                            <img id="hseImg" class="divImgUpck vis" src="images/icon-scissors.svg ">
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button onclick="opnRls() " class="psBtnRls "> <h6 class="fntColWht ">R U L E S</h6> 
+        </button>
+
+    </main>
+
+    <div id="bxRls" class="bkgLgt rndBrd8 psRls ">
+        <div class="subBox ">
+            <section>
+                <h2 class="fntColDrk fntBld7 ">RULES</h6>
+            </section>
+            <section>
+                <div class="float-right ">
+                    <button id="btnClsRls " onclick="clsRls() ">
+                            <img src="images/icon-close.svg ">
+                    </button>
+                </div>
+            </section>
+        </div>
+        <div class="cent pdRImg ">
+            <img src="images/image-rules-bonus.svg ">
+        </div>
+
+    </div>
+
+</body>
+
+</html>

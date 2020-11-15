@@ -1,0 +1,372 @@
+* {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+body {
+    background: radial-gradient( at top, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    background-attachment: fixed;
+    width: 1366px;
+    padding-top: 40px;
+}
+
+header {
+    margin: auto;
+    display: block;
+}
+
+main {
+    margin: auto;
+    display: block;
+}
+
+@media screen and (max-width: 376px) {
+    body {
+        width: 375px;
+        background-image: linear-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+        background-attachment: fixed;
+    }
+}
+
+.vis {
+    display: none;
+}
+
+#btnClsRls {
+    border: none;
+}
+
+
+/************************************************************
+/*Aspect*/
+
+.subBox {
+    display: flex;
+}
+
+.subBox>section {
+    flex: 1;
+}
+
+
+/*Background*/
+
+.bkgImg {
+    background: url("images/bg-triangle.svg");
+}
+
+.bkgLgt {
+    background: #F9F9F9;
+}
+
+
+/*****************************
+/*Border*/
+
+.rndBrd14 {
+    border-radius: 14px;
+}
+
+.rndBrd8 {
+    border-radius: 8px;
+}
+
+.brdLgt {
+    border: 3.5px solid hsl(217, 16%, 45%);
+}
+
+
+/*****************************
+/*Padding*/
+
+.pdRImg {
+    padding-top: 15px;
+}
+
+.pdScr {
+    padding-right: 25px;
+}
+
+.pdTB15 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.pdLog {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+}
+
+.pdT {
+    padding-top: 75px;
+}
+
+.pdT2 {
+    padding-top: 175px;
+}
+
+.pdRgt {
+    padding-right: 100px;
+}
+
+
+/*****************************
+/*Margin*/
+
+.mg0 {
+    margin: 0px;
+}
+
+.mg10 {
+    margin: 0px;
+}
+
+.mgRgt0 {
+    margin-right: 0px;
+}
+
+
+/*****************************
+/*Align*/
+
+.cent {
+    text-align: center;
+}
+
+.rght {
+    align-content: flex-end;
+}
+
+.just {
+    text-align: justify;
+}
+
+.centByDisp {
+    display: block;
+    margin: auto;
+}
+
+
+/*****************************
+/*Size*/
+
+.mainCont {
+    width: 700px;
+    height: 500px;
+}
+
+.boxTop {
+    width: 700px;
+    height: 150px;
+}
+
+.boxScr {
+    width: 150px;
+    height: 114px;
+}
+
+.btnRes {
+    padding-top: 12px;
+    margin: auto;
+    width: 250px;
+    height: 50px;
+}
+
+
+/************************************************************
+/*Position*/
+
+.psRel {
+    position: relative;
+}
+
+.psRls {
+    visibility: hidden;
+    position: absolute;
+    z-index: 3;
+    margin: auto;
+    left: 480px;
+    top: 150px;
+    width: 400px;
+    height: 460px;
+    padding: 25px;
+    box-shadow: 10px 10px 0px 800px rgba(0, 0, 0, 0.50);
+}
+
+.psPent {
+    position: absolute;
+    z-index: -1;
+    left: 180px;
+    top: 120px;
+}
+
+
+/*****************************
+/*Pos Img*/
+
+.psImgScs {
+    position: absolute;
+    left: 315px;
+    top: 95px;
+}
+
+.psImgPpr {
+    position: absolute;
+    left: 475px;
+    top: 220px;
+}
+
+.psImgRck {
+    position: absolute;
+    left: 410px;
+    top: 410px;
+}
+
+.psImgLzd {
+    position: absolute;
+    left: 210px;
+    top: 400px;
+}
+
+.psImgSpk {
+    position: absolute;
+    left: 160px;
+    top: 220px;
+}
+
+
+/*****************************
+/*Pos Btn*/
+
+.psBtnScs {
+    position: absolute;
+    left: 270px;
+    top: 50px;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 16px solid hsl(40, 84%, 53%);
+    box-shadow: inset 0px 6px 0px 0px rgba(0, 0, 0, 0.1), 0px 6px 0px 0px hsl(39, 92%, 33%);
+}
+
+.psBtnPpr {
+    position: absolute;
+    left: 430px;
+    top: 180px;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 16px solid hsl(230, 89%, 65%);
+    box-shadow: inset 0px 6px 0px 0px rgba(0, 0, 0, 0.1), 0px 6px 0px 0px hsl(230, 61%, 46%);
+}
+
+.psBtnRck {
+    position: absolute;
+    left: 365px;
+    top: 360px;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 16px solid hsl(349, 70%, 56%);
+    box-shadow: inset 0px 6px 0px 0px rgba(0, 0, 0, 0.1), 0px 6px 0px 0px hsl(349, 72%, 37%);
+}
+
+.psBtnLzd {
+    position: absolute;
+    left: 175px;
+    top: 360px;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 16px solid hsl(261, 72%, 63%);
+    box-shadow: inset 0px 6px 0px 0px rgba(0, 0, 0, 0.1), 0px 6px 0px 0px hsl(261, 48%, 47%);
+}
+
+.psBtnSpk {
+    position: absolute;
+    left: 110px;
+    top: 180px;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 16px solid hsl(189, 58%, 57%);
+    box-shadow: inset 0px 6px 0px 0px rgba(0, 0, 0, 0.1), 0px 6px 0px 0px hsl(189, 53%, 40%);
+}
+
+.psBtnRls {
+    background: none;
+    position: absolute;
+    left: 1260px;
+    top: 680px;
+    width: 130PX;
+    height: 40PX;
+    border-radius: 8px;
+    border: 2.5px solid hsl(217, 16%, 45%);
+    padding: 8px;
+}
+
+
+/*DivSelected*/
+
+.divUpck {
+    margin: auto;
+    width: 285px;
+    height: 285px;
+    border-radius: 50%;
+    background-color: #F9F9F9;
+    border: 30px solid hsl(40, 84%, 53%);
+    box-shadow: inset 0px 12px 0px 0px rgba(0, 0, 0, 0.1), 0px 12px 0px 0px hsl(39, 92%, 33%);
+}
+
+.divImgUpck {
+    padding-top: 60px;
+    width: 100px;
+}
+
+.divWait {
+    margin: auto;
+    width: 285px;
+    height: 285px;
+    border-radius: 50%;
+    background-color: hsl(227, 28%, 16%);
+}
+
+
+/************************************************************
+/*Fonts*/
+
+.fntBld6 {
+    font-weight: 600;
+}
+
+.fntBld7 {
+    font-weight: 700;
+}
+
+.fntNum {
+    font-size: 65px;
+    line-height: 50px;
+}
+
+.fntRes {
+    font-size: 65px;
+}
+
+
+/*Colors*/
+
+.fntColWht {
+    color: white;
+}
+
+.fntColDrk {
+    color: hsl(229, 25%, 31%);
+}
+
+.fntColScr {
+    color: hsl(229, 64%, 46%);
+}
+
+.fntColHdr {
+    color: hsl(217, 16%, 45%);
+}
